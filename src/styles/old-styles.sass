@@ -1,0 +1,223 @@
+$main-col: #a6b3fc
+// $main-col: #45db89
+$accn-col: #574fc5
+$bkgd-col: #ededed 
+$text-col: #222222
+
+$mobile: 900px
+$desktop: $mobile
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Manrope', sans-serif
+
+body
+    font-size: 16px
+    background: $bkgd-col
+    color: $text-col
+
+/*
+ * ---------- FONT STYLING ----------
+ */
+
+h1
+    font-size: 3rem
+    font-weight: 600
+    line-height: 3.2rem
+h2
+    font-size: 2.5rem
+    font-weight: 500
+h3
+    font-size: 2rem
+    font-weight: 400
+h4
+    font-size: 1.7rem
+    font-weight: 300
+h5
+    font-size: 1.3rem
+    font-weight: 200
+h6
+    font-size: 1rem
+    font-weight: 100
+
+.title
+    @extend h1
+    margin-bottom: 1rem
+
+.subtitle
+    @extend h4
+    color: $accent-col
+    margin-bottom: .5rem
+.text
+    margin-bottom: .5rem
+    font-size: 1.1em
+
+/*
+ * ---------- CONTAINERS ----------
+ */
+
+.container
+    width: 80%
+    margin: 0 auto
+    @media (max-width: $mobile)
+        max-width: 600px
+        width: 90%
+
+/*
+ * ---------- HEADER ----------
+ */
+
+header
+    position: sticky
+    top: 0
+    background: $main-col
+    z-index: 1
+    .header-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .logo
+        display: inline-block
+        text-decoration: none
+        color: $text-col
+        border: 2px solid $text-col
+        margin: .6rem 0
+        padding: .5rem 1rem
+        text-transform: uppercase
+        font-weight: 700
+        letter-spacing: .1em
+    nav
+        ul
+            cursor: default
+            li
+                list-style: none
+                display: inline-block
+                padding: .1rem
+                margin-left: 1.5rem
+                a
+                    display: inline-block
+                    text-decoration: none
+                    color: lighten($text-col, 10%)
+                    padding: 1rem .2rem
+                    font-weight: 500
+                    transition: color 200ms
+                    &:hover,
+                    &:focus
+                        color: darken($text-col, 20%)
+        @media (max-width: $mobile)
+            display: none
+            // position: relative
+            ul
+                position: absolute
+                top: 100%
+                right: 0
+                background: $main-col
+                display: flex
+                flex-direction: column
+                li
+                    margin: 0
+                    padding: 0
+                    a
+                        box-sizing: content-box
+                        width: 7rem
+                        padding-left: 3rem
+                        &:hover, &:focus
+                            background: darken($main-col, 5%)
+
+    #hamburger
+        display: none
+        // width: 20px
+        height: 20px
+        cursor: pointer
+        box-sizing: content-box
+        padding: 1rem
+        position: relative
+        right: -1rem
+        #bottom, #middle, #top
+            fill: $text-col
+        @media (max-width: $mobile)
+            display: inline-block
+
+    // .hamburger
+    //     display: none
+    //     flex-direction: column
+    //     justify-content: space-between
+    //     width: 20px
+    //     height: 15px
+    //     cursor: pointer
+    //     box-sizing: content-box
+    //     padding: 1rem
+    //     position: relative
+    //     right: -1rem
+    //     .line
+    //         width: 100%
+    //         height: 15%
+    //         background: $text-col
+    //     @media (max-width: $mobile)
+    //         display: flex
+
+/*
+ * ---------- MAIN CONTENT ----------
+ */
+
+main
+    #hero
+        height: 40rem
+        padding: 0
+        #home-hero-content
+            position: absolute
+            top: 0
+            // float: left
+            left: 10%
+            width: 40%
+            @media (max-width: $mobile)
+                width: 60%
+                left: 5%
+    #responsive
+        padding: 0
+        .devices
+            position: absolute
+            top: 4rem
+            right: 10%
+            width: 8rem
+    section
+        background: $bkgd-col
+        position: relative
+        padding: 4rem 0
+        &:nth-of-type(even)
+            background: lighten($bkgd-col, 3%)
+    .background-img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.vertical-center
+    display: flex
+    justify-content: center
+    flex-direction: column
+    height: 100%
+
+/*
+ * ---------- FOOTER CONTENT ----------
+ */
+
+footer
+    background-color: lighten($main-col, 12%)
+    padding: 3rem 0
+
+/*
+ * ---------- BUTTONS ----------
+ */
+@import 'buttons'
+
+/*
+ * ---------- TEASER CARDS ----------
+ */
+@import 'teaser-cards'
+
+/*
+ * ---------- INFO GRID ----------
+ */
+@import 'experience-grid'
