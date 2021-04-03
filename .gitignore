@@ -3,4 +3,3 @@
 package-lock.json
 *.code-workspace
 # Local Netlify folder
-.netlify
