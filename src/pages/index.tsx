@@ -1,17 +1,19 @@
-import HeadBanner from '../components/HeadBanner'
-import HomeHero from '../components/HomeHero'
-import ShowcaseSection from '../components/ShowcaseSection'
+import { useEffect } from 'react';
+import HeadBanner from '../components/HeadBanner';
+import HomeHero from '../components/HomeHero';
+import ShowcaseSection from '../components/ShowcaseSection';
 
 const index = () => {
-    return (
-        <>
-            <HeadBanner />
-            <main>
-                <HomeHero />
-                <ShowcaseSection />
-            </main>
-        </>
-    );
-}
+
+	return (
+		<>
+			<HeadBanner />
+			<main>
+				<HomeHero />
+				<ShowcaseSection />
+			</main>
+		</>
+	);
+};
 
 export default index;

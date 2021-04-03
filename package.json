@@ -5,9 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "next dev",
+		"netlify-dev": "netlify dev",
 		"build": "next build",
-		"start": "next start",
-        "export": "next export"
+		"start": "next start"
 	},
 	"author": "James Keseling",
 	"license": "ISC",

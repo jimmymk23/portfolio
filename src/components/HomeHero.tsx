@@ -6,6 +6,7 @@ const HomeHero = () => {
 			<Image
 				src='/images/laptop.jpg'
 				layout='fill'
+				objectFit='cover'
 				alt='Laptop'
 				id='background-image'
 			/>
