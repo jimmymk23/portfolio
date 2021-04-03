@@ -4,10 +4,9 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev": "next dev",
-		"netlify-dev": "netlify dev",
-		"build": "next build",
-		"start": "next start"
+		"dev": "netlify dev",
+		"build": "netlify build",
+		"start": "netlify start"
 	},
 	"author": "James Keseling",
 	"license": "ISC",
