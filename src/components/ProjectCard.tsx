@@ -23,13 +23,11 @@ const ProjectCard = ({
 				layout='responsive'
 				alt={title}
 			/>
-			<div className='content'>
-				<h4>{title}</h4>
-				<p>{caption}</p>
-				<div className='button-row'>
-					<Link href='#'>See More</Link>
-					<Link href='#'>GitHub</Link>
-				</div>
+			<h3>{title}</h3>
+			<p>{caption}</p>
+			<div className='button-row'>
+				<Link href='#'>See More</Link>
+				<Link href='#'>GitHub</Link>
 			</div>
 		</div>
 	);
