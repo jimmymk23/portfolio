@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Url } from 'node:url';
 
 interface ProjectCardProps {
 	imgPath: string;
 	title: string;
 	caption?: string;
+	page: string;
 	githubLink: string;
 }
 
@@ -12,6 +14,7 @@ const ProjectCard = ({
 	imgPath,
 	title,
 	caption,
+	page,
 	githubLink,
 }: ProjectCardProps) => {
 	return (
@@ -26,8 +29,10 @@ const ProjectCard = ({
 			<h3>{title}</h3>
 			<p>{caption}</p>
 			<div className='button-row'>
-				<Link href='#'>See More</Link>
-				<Link href='#'>GitHub</Link>
+				<Link href={page}>See More</Link>
+				<Link href={githubLink}>
+					<a target='_blank'>GitHub</a>
+				</Link>
 			</div>
 		</div>
 	);
