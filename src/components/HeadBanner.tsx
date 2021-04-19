@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import styles from '../styles/HeadBanner.module.sass';
 
 const HeadBanner = () => {
 	return (
-		<header>
+		<header className={styles.header}>
 			<div className='wide-container'>
 				<Link href='/'>
-					<a className='text-logo'>James Keseling</a>
+					<a className={styles.text_logo}>James Keseling</a>
 				</Link>
 			</div>
 		</header>

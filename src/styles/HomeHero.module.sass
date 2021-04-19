@@ -1,0 +1,39 @@
+@use '_helpers' as *
+
+.section
+    position: relative
+    min-height: 65vh
+    padding: 0
+
+.background_image
+    object-fit: cover
+
+.text_content
+    position: absolute
+    width: 65vw
+    height: 100%
+    color: $text-color
+    left: 20px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    @media (min-width: $med-width)
+        left: 100px
+        width: 50vw
+    @media (min-width: $full-width)
+        left: 150px
+        width: 40vw
+    h1
+        font-size: 3rem
+        margin-bottom: 0.5em
+    h2
+        font-size: 1.3em
+        font-weight: 400
+        text-transform: uppercase
+        color: $accent-color
+        margin-bottom: 0
+
+.button
+    margin-top: 2em
+

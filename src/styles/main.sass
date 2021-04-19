@@ -80,60 +80,6 @@ ul
 .subtitle
     color: $accent-color
 
-header
-    position: sticky
-    top: 0
-    z-index: 999
-    width: 100vw
-    height: auto
-    background-color: transparentize(mix($accent-color, $background-color, 50%), 0.5)
-    backdrop-filter: blur(10px)
-    .text-logo
-        display: inline-block
-        text-decoration: none
-        color: $text-color
-        border: 2px solid $text-color
-        margin: 0.5em 0 0.5em 0.5em
-        padding: 0.5rem 1rem
-        text-transform: uppercase
-        font-weight: 600
-        letter-spacing: 0.1em
-
-#home-hero
-    position: relative
-    min-height: 65vh
-    padding: 0
-    #background-image
-        object-fit: cover
-    #text-content
-        position: absolute
-        width: 65vw
-        height: 100%
-        color: $text-color
-        left: 20px
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: flex-start
-        @media (min-width: $med-width)
-            left: 100px
-            width: 50vw
-        @media (min-width: $full-width)
-            left: 150px
-            width: 40vw
-        h1
-            font-size: 3rem
-            margin-bottom: 0.5em
-        h2
-            font-size: 1.3em
-            font-weight: 400
-            text-transform: uppercase
-            color: $accent-color
-            margin-bottom: 0
-        a.button
-            margin-top: 2em
-
-
 section
     padding: 1.5em 0
 
