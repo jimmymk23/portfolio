@@ -10,6 +10,7 @@ const HomeHero = () => {
 				objectFit='cover'
 				alt='Laptop'
 				className={styles.background_image}
+				quality={40}
 			/>
 			<div className={styles.text_content}>
 				<h1>James Keseling</h1>
