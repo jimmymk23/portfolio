@@ -4,7 +4,7 @@ import styles from '../styles/HeadBanner.module.sass';
 const HeadBanner = () => {
 	return (
 		<header className={styles.header}>
-			<div className='wide-container'>
+			<div className='container'>
 				<Link href='/'>
 					<a className={styles.text_logo}>James Keseling</a>
 				</Link>

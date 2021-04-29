@@ -17,7 +17,7 @@ const HomeHero = () => {
 				<h2>Front-End Web Developer</h2>
 				<a
 					href='https://github.com/jimmymk23'
-					className={`button ${styles.button}`}
+					className={`button`}
 					target='_blank'
 				>
 					My GitHub
