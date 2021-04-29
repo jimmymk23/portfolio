@@ -15,11 +15,7 @@ const HomeHero = () => {
 			<div className={styles.text_content}>
 				<h1>James Keseling</h1>
 				<h2>Front-End Web Developer</h2>
-				<a
-					href='https://github.com/jimmymk23'
-					className={`button`}
-					target='_blank'
-				>
+				<a href='/gh' className={`button`} target='_blank'>
 					My GitHub
 				</a>
 			</div>
