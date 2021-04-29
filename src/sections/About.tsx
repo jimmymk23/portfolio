@@ -36,8 +36,8 @@ const About = () => {
 					<div className='flex-card'>
 						<h3 className='subtitle'>Deploying & Hosting on:</h3>
 						<ul>
-							<li>Netlify</li>
 							<li>Vercel</li>
+							<li>Netlify</li>
 							<li>Heroku</li>
 						</ul>
 					</div>
