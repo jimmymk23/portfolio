@@ -22,6 +22,11 @@ module.exports = {
 				destination: 'https://www.snapchat.com/add/jimmymk23',
 				permanent: true,
 			},
+			{
+				source: '/gh',
+				destination: 'https://github.com/jimmymk23',
+				permanent: true,
+			},
 		];
 	},
 };
