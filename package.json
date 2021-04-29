@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "A personal portfolio for James Keseling",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/jimmymk23/portfolio.git"
   },
-  "author": "James Keseling",
+  "author": "James Keseling <jamesmkeseling@gmail.com> (https://jameskeseling.com)",
   "license": "ISC",
   "dependencies": {
     "next": "^10.2.0",
