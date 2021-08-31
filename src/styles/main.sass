@@ -83,19 +83,21 @@ ul
 section
     padding: 2em 0
 
-.flex-card-container
+.card-container
     display: flex
-    flex-flow: row wrap
+    flex-direction: column
     justify-content: center
     width: 100%
     gap: 1.5em
     margin: 2em 0
-    .flex-card
+    @media (width > 900px)
+        display: grid
+        grid-template: 1fr 1fr / 1fr 1fr
+    .card
         background-color: #fafafa
         box-shadow: 0 0 20px #e0e0e0
         border-radius: 5px
-        flex: 1 0 330px
-        padding: 2em 2.5em
+        padding: 2em 10%
         transition: transform 0.2s ease
         &:hover
             transform: translateY(-4px)

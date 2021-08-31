@@ -9,8 +9,8 @@ const About = () => {
 				</p>
 			</div>
 			<div className='wide-container'>
-				<div className='flex-card-container'>
-					<div className='flex-card'>
+				<div className='card-container'>
+					<div className='card'>
 						<h3 className='subtitle'>Programming with:</h3>
 						<ul>
 							<li>JavaScript & TypeScript</li>
@@ -18,14 +18,14 @@ const About = () => {
 							<li>Python</li>
 						</ul>
 					</div>
-					<div className='flex-card'>
+					<div className='card'>
 						<h3 className='subtitle'>Frameworks:</h3>
 						<ul>
 							<li>React.js</li>
 							<li>Next.js</li>
 						</ul>
 					</div>
-					<div className='flex-card'>
+					<div className='card'>
 						<h3 className='subtitle'>Collaboration using:</h3>
 						<ul>
 							<li>Git</li>
@@ -33,7 +33,7 @@ const About = () => {
 							<li>CodePen</li>
 						</ul>
 					</div>
-					<div className='flex-card'>
+					<div className='card'>
 						<h3 className='subtitle'>Deploying & Hosting on:</h3>
 						<ul>
 							<li>Vercel</li>
