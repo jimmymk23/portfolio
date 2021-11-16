@@ -24,7 +24,11 @@ const newspaper = () => {
 						<li>
 							Deployed using{' '}
 							<Link href='https://vercel.com'>
-								<span className='highlight'>Vercel.com</span>
+								<a>
+									<span className='highlight'>
+										Vercel.com
+									</span>
+								</a>
 							</Link>
 						</li>
 						<li>Next.js</li>

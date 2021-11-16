@@ -1,7 +1,4 @@
 module.exports = {
-	devIndicators: {
-		autoPrerender: true,
-	},
 	async redirects() {
 		return [
 			{
