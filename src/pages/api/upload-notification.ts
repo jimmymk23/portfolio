@@ -9,7 +9,6 @@ export default function handler(
 	req: NextApiRequest,
 	res: NextApiResponse<Data>
 ) {
-	console.log(req.body);
-
+	console.log(req.body.data);
 	res.status(200);
 }
