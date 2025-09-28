@@ -9,6 +9,7 @@ export default function handler(
 	req: NextApiRequest,
 	res: NextApiResponse<Data>
 ) {
-	console.log(req.body.data);
+	const body = req.body.json();
+	console.log("Received upload notification:", body);
 	res.status(200);
 }
