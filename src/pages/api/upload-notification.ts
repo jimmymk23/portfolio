@@ -12,6 +12,11 @@ export default async function handler(
     text: message,
   };
 
+  if (!webhookUrl) {
+    console.log("Webhook URL is not defined");
+    return;
+  }
+
   try {
     const response = await fetch(webhookUrl, {
       method: "POST",
@@ -27,6 +32,6 @@ export default async function handler(
       res.status(500).json({ success: false, error: "Failed to send message" });
     }
   } catch (error) {
-    res.status(500).json({ success: false, error: error.message });
+    res.status(500).json({ success: false, error: (error as Error).message });
   }
 }
